@@ -36,33 +36,28 @@ const algorithm = (cardno) => {
   const cardReverse = cardno.split(' ').join('').split('').reverse()
 
   let count = 0;
-  let reverseNum = cardReverse;
-  
-  let pairNum;
+  let message = "Tarjeta inválida";
 
-  for (let i = 0; i < reverseNum.length; i++){
+  for (let i = 0; i < cardReverse.length; i++){
 
-    if((i+1) % 2 === 0){
-      pairNum = (reverseNum[i] * 2);
-      if(pairNum >= 10){
-        const firstDigit = ((pairNum - 10) + 1);
-        reverseNum[i] = firstDigit;
-      }else{
-        reverseNum = pairNum;
-      }
+    cardReverse[i] = parseInt(cardReverse[i])
+    if(i % 2 !== 0){
+      cardReverse[i] = cardReverse[i] * 2
     }
-    
-    count += reverseNum[i];
+
+    if(cardReverse[i] >= 10){
+      cardReverse[i] = cardReverse[i] - 9
+    }
+
+    count += cardReverse[i]
   }
 
   // eslint-disable-next-line eqeqeq
   if(count % 10 === 0){
-    console.log('Tarjeta válida')
-    return true;
-  }else{
-    console.log('Tarjeta inválida')
-    return false;
+    message = "Tarjeta válida"
   }
+
+  console.log(message)
 
 }
 
@@ -75,12 +70,8 @@ export const isValid = () => {
   
   
   if(algorithm(allNumber.value)){
-    //message = "that worked!";
-    console.info("that worked")
+    console.log(algorithm(allNumber.value))
           
-  }else{
-    //message = "verification failed :(";
-    console.warn("verification failed")
   }
 }
 

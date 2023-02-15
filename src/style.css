@@ -24,7 +24,7 @@ body{
     display: block;
     /*align-items: center;*/
     justify-content: center;
-    min-height: 100vh;
+    /* min-height: 100vh; */
     background-color: var(--background-color);
 }
 
@@ -42,8 +42,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 10%;
-    background-color: rgb(129, 104, 104);
+    padding: 0px 10%;
 }
 
 #title{
@@ -85,11 +84,11 @@ header{
 /* ! OTRO */
 
 .container{
-    top: 20%;
-    right: 38%;
+    position: relative;
     width: 350px;
     background: white;
     padding: 30px;
+    left: 45%;
     /*position: absolute;*/
 }
 
@@ -121,7 +120,7 @@ form label{
     word-spacing: 4px;
 }
 
-form select{
+form #text-name{
     width: 100%;
     outline: none; /* *? retirar */
     border: none;
@@ -195,5 +194,8 @@ footer{
     padding: 10px 10px;
     padding-top: 35px;
     text-align: center;
+    position: relative ;
+    /*position: sticky ;*/
+    
 }
 
