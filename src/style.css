@@ -1,0 +1,199 @@
+/**
+ * TODO:  Importar FONT GOOGLE
+ */
+
+ @import url('https://fonts.googleapis.com/css2?family=Kanit&family=Montserrat:wght@500&family=Spline+Sans+Mono&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/**
+ * TODO:  Colores a usar
+ */
+
+:root{
+    --text-color: rgb(110,110,110);
+    --background-color: rgb(245,164,177);
+    
+}
+
+body{
+    display: block;
+    /*align-items: center;*/
+    justify-content: center;
+    min-height: 100vh;
+    background-color: var(--background-color);
+}
+
+/* ! HEADER */
+
+li, a, button{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    background-color: rgb(129, 104, 104);
+}
+
+#title{
+    cursor: pointer;
+    font-family: "Montserrat", sans-serif;
+    font-size: 30px;
+}
+
+.nav_links{
+    list-style: none;
+}
+
+.nav_links li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav_links li a{
+    transition: all 0.2s ease 0s;
+}
+
+.nav_links li a:hover{
+    color: aquamarine;
+}
+
+#getStart{
+    padding: 9px 25px;
+    background-color: rgb(110,110,110);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.2s ease 0s;
+}
+
+#getStart:hover{
+    background-color: bisque;
+}
+
+/* ! OTRO */
+
+.container{
+    top: 20%;
+    right: 38%;
+    width: 350px;
+    background: white;
+    padding: 30px;
+    /*position: absolute;*/
+}
+
+h6{
+    font-size: 30px;
+    color: var(--text-color);
+    font-family: montserrat;
+}
+
+span{
+    position: absolute;
+    right: 34px;
+    top: 28px;
+    font-size: 18px;
+    color: var(--text-color);
+}
+
+h1{
+    padding: 30px 0px;
+    font-size: 40px;
+    color: var(--text-color);
+}
+
+form label{
+    color: var(--text-color);
+    text-transform: uppercase;
+    position: relative;
+    font-size: 10px;
+    word-spacing: 4px;
+}
+
+form select{
+    width: 100%;
+    outline: none; /* *? retirar */
+    border: none;
+    border-bottom: 1px solid rgb(223, 223, 223);
+    text-transform: capitalize;
+    padding-top: 3px;
+    color: var(--text-color);
+    padding-bottom: 3px;
+    font-size: 18px;
+    margin-left: -3px;
+    margin-bottom: 30px;
+    /* background-color: transparent; */
+}
+
+form #cardno{
+    width: 100%;
+    outline: none; /* *? retirar */
+    border: none;
+    border-bottom:  1px solid rgb(223, 223, 223);
+    padding-top: 3px; /* 5px */
+    margin-bottom: 20px;
+    padding-right: 30px;
+    color: var(--text-color);
+    font-size: 18px;
+    padding-bottom: 5px;
+}
+
+.float{
+    display: flex;
+}
+
+/* ! USANDO ID #ABC */
+
+#validtill, #cvv{
+    border: none;
+    border-bottom: 1px solid rgb(223, 223, 223);
+    outline: none;
+    width: 130px;
+    padding-top: 14px;
+    margin-bottom: 56px;
+    color: var(--text-color);
+    font-size: 18px;
+}
+
+p{
+    margin: -20px 0px 56px 25px;
+    font-size: 16px;
+    text-transform: none;
+}
+
+#validator{
+    border: none;
+    outline: none;
+    text-align: center;
+    width: 100%;
+    height: 40px;
+    background: rgb(223, 223, 223);
+    color: rgb(31, 30, 30);
+    padding: 10px;
+    font-weight: bold;
+}
+
+/* ! FOOTER */
+
+footer{
+    font-family: "Montserrat", sans-serif;
+    background: black;
+    height: 50px;
+    width: auto;
+    color: white;
+    padding: 10px 10px;
+    padding-top: 35px;
+    text-align: center;
+}
+

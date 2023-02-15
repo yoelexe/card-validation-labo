@@ -2,13 +2,84 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
     <title>Tarjeta de crédito válida</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
-    <script src="index.js" type="module"></script>
+
+    <!-- Header main footer -->
+
+    <!-- HEADER -->
+
+    <header>
+      <h1 id="title">bankCarty</h1>
+
+      <nav>
+
+        <ul class="nav_links">
+          <li><a href="">For Business</a></li>
+          <li><a href="">How ir Works?</a></li>
+          <li><a href="">Features</a></li>
+        </ul>
+
+      </nav>
+
+      <a class="getStart" href=""><button id="getStart">Get Started</button></a>
+    </header>
+
+    <!-- HEADER -->
+
+    <div class="container">
+      <h6>Checkout</h6>
+      <span>x</span>
+      <h1>Payment Method</h1>
+      <form action="" id="credit-card">
+
+        <label for="country">Country
+          <input type="text" name="text-name" id="text-name">
+        </label>
+
+        <label >Card Number
+          <input type="text" name="cardno" id="cardno" autocomplete="off" maxlength="19" placeholder="**** **** **** ****"
+          onkeypress="return event.charCode >= 48 && event.charCode <= 57" required>
+          
+        </label>
+
+        <label for="ccValidator" >Is it valid?</label>
+
+        <div class="float">
+
+          <label for="validtill">Valid Till
+            <input type="text" name="validtill" id="validtill" maxlength="7" required />
+          </label>
+
+          <label for="cvv">CVV 
+            <input type="text" name="cvv" id="cvv" maxlength="3" required/>
+          </label>
+
+        </div>
+
+          <label for="checkbox">
+            <input type="checkbox" name="checkbox" id="checkbox"/>
+            <p>Payment Address is the same as the delivery Address</p>
+          </label>
+
+          <button id="validator" name="validator">Pay S/. 10.00 </button>
+        
+      </form>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-bottom">
+        <p>Copyright &copy;2023 cardValidation designed by <span>Karen</span></p>
+      </div>
+    </footer>
+
+    <!-- FOOTER -->
+    
+    <script src="index.js" type="module" defer>
+    </script>
   </body>
 </html>
