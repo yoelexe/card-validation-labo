@@ -6,10 +6,12 @@ const validator = (a,b) => {
 };
 */
 
+/* Regex para Date -> ^(0[1-9]|[1-2]\d|3[01])(\/)(0[1-9]|1[012])\2(\d{4})$/ */
+
 export const cardVerificationNum = () => {
   const cardNumber = document.querySelector("#cardno");
   // imagen de tarjeta
-  //const cardNumberText = document.querySelector(".number-vl");
+  //const cardNumberText = document.querySelector(".number-valor");
 
   cardNumber.addEventListener("keyup", (e) => {
     if(!e.target.value){
@@ -52,20 +54,28 @@ const algorithm = (cardno) => {
     count += cardReverse[i]
   }
 
-  // eslint-disable-next-line eqeqeq
   if(count % 10 === 0){
     message = "Tarjeta válida"
   }
 
   console.log(message)
 
+
+  let collector = "";
+
+  for(let i = 0; i < cardno.length; i++){
+    if(i < 15){
+      collector = collector + cardno[i]
+    }else{
+      collector = collector + "#"
+    }
+  }
+  return collector
+
 }
 
 export const isValid = () => {
   const allNumber = document.getElementById('cardno');
-  //const reverse = allNumber.split('').reverse().join('');
-  //const allValidator = document.getElementById('ccValidator');
-  //let message = "";
 
   
   

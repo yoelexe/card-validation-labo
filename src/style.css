@@ -8,6 +8,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
 }
 
 /**
@@ -95,7 +96,7 @@ header{
 h6{
     font-size: 30px;
     color: var(--text-color);
-    font-family: montserrat;
+    font-family: "Montserrat", sans-serif;
 }
 
 span{
@@ -154,7 +155,7 @@ form #cardno{
 
 /* ! USANDO ID #ABC */
 
-#validtill, #cvv{
+#date, #cvv{
     border: none;
     border-bottom: 1px solid rgb(223, 223, 223);
     outline: none;
@@ -189,13 +190,19 @@ footer{
     font-family: "Montserrat", sans-serif;
     background: black;
     height: 50px;
-    width: auto;
+    width: 100%;
     color: white;
-    padding: 10px 10px;
+    padding: 10px 0;
     padding-top: 35px;
-    text-align: center;
-    position: relative ;
+    position: absolute ;
+    bottom: 0;
+    top: 94%;
     /*position: sticky ;*/
     
+}
+
+.footer-bottom{
+    text-align: center;
+    word-spacing: 2px;
 }
 

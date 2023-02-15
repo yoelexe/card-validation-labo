@@ -9,7 +9,7 @@ import {isValid, cardVerificationNum} from './validator.js';
 const cardNumber = document.querySelector("#cardno");
 const button = document.querySelector("#validator");
 // imagen de tarjeta
-//const cardNumberText = document.querySelector(".number-vl");
+//const cardNumberText = document.querySelector(".number-valor");
 
 // keyup o input
 cardNumber.addEventListener("keyup", cardVerificationNum)
