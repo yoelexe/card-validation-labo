@@ -17,7 +17,7 @@
 
 :root{
     --text-color: rgb(110,110,110);
-    --background-color: rgb(245,164,177);
+    --background-color: #fafaff;
     
 }
 
@@ -58,6 +58,7 @@ header{
 .nav_links li{
     display: inline-block;
     padding: 0px 20px;
+    text-decoration: dashed;
 }
 
 .nav_links li a{
@@ -66,6 +67,7 @@ header{
 
 .nav_links li a:hover{
     color: aquamarine;
+    text-decoration: dashed;
 }
 
 #getStart{
@@ -86,9 +88,18 @@ header{
 .container{
     position: relative;
     width: 350px;
-    background: white;
+    background: #ecebe4;
     padding: 30px;
     left: 45%;
+    /*position: absolute;*/
+}
+
+.second-container{
+    position: absolute;
+    width: 350px;
+    background: #ecebe4;
+    padding: 30px;
+    left: 20%;
     /*position: absolute;*/
 }
 
@@ -135,7 +146,7 @@ form #text-name{
     /* background-color: transparent; */
 }
 
-form #cardno{
+form #creditCardNumber{
     width: 100%;
     outline: none; /* *? retirar */
     border: none;
@@ -187,12 +198,12 @@ p{
 
 footer{
     font-family: "Montserrat", sans-serif;
-    background: black;
-    height: 50px;
+    background: #eef0f2;
+    height: 45px;
     width: 100%;
-    color: white;
-    padding: 10px 0;
-    padding-top: 35px;
+    color: black;
+    padding: 0;
+    padding-top: 30px;
     position: absolute ;
     bottom: 0;
     top: 94%;

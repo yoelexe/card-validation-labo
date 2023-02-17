@@ -5,11 +5,12 @@ const validator = (a,b) => {
     return a+b
 };
 */
+// return e.charCode >= 48 && e.charCode <= 57
 
 /* Regex para Date -> ^(0[1-9]|[1-2]\d|3[01])(\/)(0[1-9]|1[012])\2(\d{4})$/ */
 
-export const cardVerificationNum = () => {
-  const cardNumber = document.querySelector("#cardno");
+/*export const cardVerificationNum = () => {
+  const cardNumber = document.querySelector('#cardno');
   // imagen de tarjeta
   //const cardNumberText = document.querySelector(".number-valor");
 
@@ -64,7 +65,7 @@ const algorithm = (cardno) => {
   let collector = "";
 
   for(let i = 0; i < cardno.length; i++){
-    if(i < 15){
+    if(i > 14){
       collector = collector + cardno[i]
     }else{
       collector = collector + "#"
@@ -86,4 +87,68 @@ export const isValid = () => {
 }
 
 
-//export default validator;
+//export default validator;*/
+
+const validator = {
+  
+  isValid: function(creditCardNumber){
+    console.log("Hola")
+    //const allNumber = document.getElementById('creditCardNumber');
+    const cardReverse = creditCardNumber.split(' ').join('').split('').reverse()
+
+    let count = 0;
+    //let message = "Tarjeta inválida";
+
+    for (let i = 0; i < cardReverse.length; i++){
+
+      cardReverse[i] = parseInt(cardReverse[i])
+      if(i % 2 !== 0){
+        cardReverse[i] = cardReverse[i] * 2
+      }
+
+      if(cardReverse[i] >= 10){
+        cardReverse[i] = cardReverse[i] - 9
+      }
+
+      count += cardReverse[i]
+    }
+    console.log(count)
+
+    if(count % 10 === 0){
+      console.log("Tarjeta válida" )
+      return true;
+    }else{
+      console.log('Tarjeta inválida')
+      return false;
+    }
+
+
+    /*if(allNumber.value){
+      console.log(allNumber.value)
+    }*/
+
+
+    
+  
+  },
+
+  maskify: function (creditCardNumber) {
+    //const allNumber = document.getElementById('creditCardNumber');
+
+    /*let collector = "";
+
+    for(let i = 0; i < creditCardNumber.length; i++){
+      if(i > -9){
+        collector = collector + creditCardNumber[i]
+      }else{
+        collector = collector + "#"
+      }
+      
+    }
+    return collector*/
+    return creditCardNumber.replace(/.(?=.{4})/g, "#");
+
+
+  }}
+
+export default validator;
