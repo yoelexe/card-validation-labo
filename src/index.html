@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width">
     <title>Tarjeta de crédito válida</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://kit.fontawesome.com/12b223ed13.css" crossorigin="anonymous">
   </head>
   <body>
 
@@ -13,7 +14,7 @@
     <!-- HEADER -->
 
     <header>
-      <h1 id="title">bankCarty</h1>
+      <h1 id="title">carty</h1>
 
       <nav>
 
@@ -21,19 +22,25 @@
           <li><a href="">For Business</a></li>
           <li><a href="">How ir Works?</a></li>
           <li><a href="">Features</a></li>
+          <li><a href="">Features</a></li>
         </ul>
 
       </nav>
-
-      <a class="getStart" href=""><button id="getStart">Get Started</button></a>
+      <img id="search" src="image/icon_search.png" />
+      <a class="getStart" href=""><img id="getStart" src="image/icon_user.png" /></a>
+    
+      
     </header>
 
     <!-- HEADER -->
 
     <!-- MAIN -->
+    <h5>Hi Karen, welcome back!</h5>
     <div class="second-container">
       <div class="">
         <img src="image/icon_chip.png" alt="">
+        <label id="label-name">Hola</label>
+        <label id="label-number">Hola</label>
       </div>
       
     </div>
@@ -49,8 +56,8 @@
         </label>
 
         <label >Card Number
-          <input type="text" name="creditCardNumber" id="creditCardNumber" autocomplete="off" maxlength="13" 
-          placeholder="**** **** **** ****" required>
+          <input type="text" name="creditCardNumber" id="creditCardNumber" autocomplete="off" maxlength="16" 
+          placeholder="**** **** **** ****" onkeypress="return event.charCode >= 48 && event.charCode <= 57" required>
           
         </label>
 
@@ -58,12 +65,12 @@
 
           <label for="date">Date
             <input type="text" name="date" id="date" maxlength="7" autocomplete="off"
-            required />
+            onkeypress="return event.charCode >= 48 && event.charCode <= 57" required />
           </label>
 
           <label for="cvv">CVV 
             <input type="text" name="cvv" id="cvv" maxlength="3" autocomplete="off"
-            required/>
+            onkeypress="return event.charCode >= 48 && event.charCode <= 57" required/>
           </label>
 
         </div>

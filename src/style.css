@@ -22,6 +22,7 @@
 }
 
 body{
+    /**/height: 50%;
     display: block;
     /*align-items: center;*/
     justify-content: center;
@@ -40,7 +41,7 @@ li, a, button{
 
 header{
     display: flex;
-    justify-content: space-between;
+    /*justify-content: space-between;*/
     align-items: center;
     padding: 0px 10%;
 }
@@ -52,7 +53,9 @@ header{
 }
 
 .nav_links{
+    padding: 0px 250px;
     list-style: none;
+    justify-content: flex-end;
 }
 
 .nav_links li{
@@ -71,26 +74,38 @@ header{
 }
 
 #getStart{
-    padding: 9px 25px;
-    background-color: rgb(110,110,110);
-    border: none;
-    border-radius: 50px;
+    padding: 6px 10px;
+    /*background-color: rgb(110,110,110);*/
+    /*border: 0.5px solid rgb(231, 226, 226);*/
+    border-radius: 30px;
     cursor: pointer;
     transition: all 0.2s ease 0s;
+    width: 48px;
+    /*box-shadow: 3px 3px 3px rgb(231, 226, 226);*/
 }
 
-#getStart:hover{
-    background-color: bisque;
+#search{
+    padding: 6px 10px;
+    border-radius: 30px;
+    width: 46px;
+    cursor: pointer;
+    left: 50%;
+    
 }
 
 /* ! OTRO */
+h5{
+    position: absolute;
+    right: 80%;
+    top: 20%;
+}
 
 .container{
     position: relative;
     width: 350px;
     background: #ecebe4;
     padding: 30px;
-    left: 45%;
+    left: 60%;
     /*position: absolute;*/
 }
 
@@ -99,6 +114,7 @@ header{
     width: 350px;
     background: #ecebe4;
     padding: 30px;
+    top: 50%;
     left: 20%;
     /*position: absolute;*/
 }
@@ -192,21 +208,25 @@ p{
     color: rgb(31, 30, 30);
     padding: 10px;
     font-weight: bold;
+    cursor: pointer;
+}
+
+#validator:hover{
+    background: hsl(0, 100%, 50%)
 }
 
 /* ! FOOTER */
 
 footer{
     font-family: "Montserrat", sans-serif;
-    background: #eef0f2;
+    background: #537496;
     height: 45px;
     width: 100%;
     color: black;
     padding: 0;
     padding-top: 30px;
-    position: absolute ;
+    position: fixed ;
     bottom: 0;
-    top: 94%;
     /*position: sticky ;*/
     
 }
