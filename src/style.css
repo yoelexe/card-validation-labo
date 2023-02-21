@@ -1,7 +1,4 @@
-/**
- * TODO:  Importar FONT GOOGLE
- */
-
+/*Importar font de google*/
  @import url('https://fonts.googleapis.com/css2?family=Kanit&family=Montserrat:wght@500&family=Spline+Sans+Mono&display=swap');
 
 *{
@@ -11,10 +8,7 @@
     font-family: "Montserrat", sans-serif;
 }
 
-/**
- * TODO:  Colores a usar
- */
-
+/*Colores a usar */
 :root{
     --text-color: rgb(110,110,110);
     --background-color: #fafaff;
@@ -74,13 +68,10 @@ header{
 
 #getStart{
     padding: 6px 10px;
-    /*background-color: rgb(110,110,110);*/
-    /*border: 0.5px solid rgb(231, 226, 226);*/
     border-radius: 30px;
     cursor: pointer;
     transition: all 0.2s ease 0s;
     width: 48px;
-    /*box-shadow: 3px 3px 3px rgb(231, 226, 226);*/
 }
 
 #search{
@@ -89,16 +80,9 @@ header{
     width: 46px;
     cursor: pointer;
     left: 50%;
-    
 }
 
 /* ! OTRO */
-
-h5{
-    position: absolute;
-    right: 80%;
-    top: 20%;
-}
 
 .container{
     position: relative;
@@ -106,27 +90,23 @@ h5{
     background: #ecebe4;
     padding: 30px;
     left: 60%;
-    /*position: absolute;*/
 }
 
 .second-container{
     position: absolute;
     width: 450px;
     height: 300px;
-    
     background-image: linear-gradient(to left, #0acffe 0%, #495aff 100%);
     padding: 30px;
-
     border-radius: 30px;
     top: 30%;
     left: 20%;
     box-shadow: 1px 5px 6px 0px black;
-    /*position: absolute;*/
 }
 
 .visaLogo{
-    width: 70px;
-    height: 30px;
+    width: 75px;
+    height: 35px;
     right: 10%;
     position: absolute;
     
@@ -160,15 +140,7 @@ h5{
 .card-text #label-number{
     font-size: 25px;
     font-weight: bold;
-    /*background: linear-gradient(#eee, rgb(196,196,196));*/
-    /*
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-shadow: 2px 2px 2px rgba(121, 111, 111, 0.5);*/
 }
-
-
-
 
 h6{
     font-size: 30px;
@@ -210,7 +182,6 @@ form #text-name{
     font-size: 18px;
     margin-left: -3px;
     margin-bottom: 30px;
-    /* background-color: transparent; */
 }
 
 form #creditCardNumber{
@@ -286,4 +257,29 @@ footer{
     text-align: center;
     word-spacing: 2px;
 }
+
+.american{
+    position: absolute;
+    width: 450px;
+    height: 300px;   
+    background-image: linear-gradient(to right, #434343 0%, black 100%);
+    padding: 30px;
+    border-radius: 30px;
+    top: 30%;
+    left: 20%;
+    box-shadow: 1px 5px 6px 0px black;
+}
+
+.mastercard{
+    position: absolute;
+    width: 450px;
+    height: 300px;
+    background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+    padding: 30px;
+    border-radius: 30px;
+    top: 30%;
+    left: 20%;
+    box-shadow: 1px 5px 6px 0px black;
+}
+
 

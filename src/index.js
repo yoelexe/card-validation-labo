@@ -10,6 +10,7 @@ const cardNumber = document.querySelector("#creditCardNumber");
 const button = document.querySelector("#validator");
 const label_tarjeta = document.querySelector("#label-number");
 const label_nombre = document.querySelector("#label-name");
+//const cardType = document.querySelector("#cardType");
 // imagen de tarjeta
 //const cardNumberText = document.querySelector(".number-valor");
 
@@ -23,6 +24,7 @@ button.addEventListener('click', () => {
 
 cardNumber.addEventListener('keyup', () => {
   label_tarjeta.innerHTML = validator.maskify(cardNumber.value)
+  validator.target(cardNumber.value)
   
 })
 // para separar los números -> label_tarjeta.innerHTML = validator.validaNum(cardNumber.value)
