@@ -2,6 +2,7 @@ const isValid = (creditCardNumber) => {
   //const allNumber = document.getElementById('creditCardNumber');
   const cardReverse = creditCardNumber.split(' ').join('').split('').reverse()
 
+
   let count = 0;
   //let message = "Tarjeta inválida";
 
@@ -19,12 +20,17 @@ const isValid = (creditCardNumber) => {
     count += cardReverse[i]
   }
   //console.log(count)
+  // document.getElementById("message-error").removeAttribute('class', 'message-error')
 
   if(count % 10 === 0){
-    alert('Tarjeta válida')
+    if(typeof window !== 'undefined'){
+      alert('Tarjeta válida')
+    }
     return true;
   }else{
-    alert('Tarjeta válida')
+    if(typeof window !== 'undefined'){
+      alert('Tarjeta inválida')
+    }
     return false;
   }
 
@@ -61,11 +67,11 @@ const target = (creditCardNumber) =>  {
     return 'Mastercard'
   }
 
-  return "";
-      
+  return "";  
+
 }
 
-  
+
 
 
 const validator = {
