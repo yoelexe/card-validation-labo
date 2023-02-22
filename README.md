@@ -1,35 +1,16 @@
-# Heading level 1
+# Credit Card Validation
 
-## Heading level 2
-===========================
+## Wallet app: carty!
 
-## Heading level 2
+### ¿Qué es **carty!** ?
 
-I think I'll use it to format
+Es una billetera digital dirigido al público mayor de edad, este aplicativo fue pensada para ayudar a los usuarios a llevar la propia cuenta de sus egresos, ingresos y realizar operaciones desde la comoidad del hogar. 
 
-Keep lines left-aligned like this.
+### ¿Qué puedo hacer en **carty!** ?
 
-First line with the HTML tag after.<br>
-And the next line.
+Nuestra billetera virtual tiene realizar las siguientes operaciones:
 
-I just love **bold text**.
-
-Italicized text is the *cat's meow*.
-
-This text is ***really important***. 
-
-> Hola que tal
-> - Hola que tal <br
->
->
-> *Everything* is going according to **plan**
-
-- kookokoko
-
-1. hola
-2. hola
-3. hola
-
-other line
-
-![Tux, the Linux mascot](https://i.pinimg.com/236x/8d/f0/49/8df0491ada67dd8583558a910f76a261.jpg)
+- Recibir dinero desde una cuenta bancaria
+- Transferir dinero de forma inmediata
+- Visualizar tu historial crediticio
+- Recibir informes de tus ingresos, egresos, etc.
