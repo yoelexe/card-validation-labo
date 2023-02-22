@@ -66,18 +66,18 @@
     </div>
 
     <div class="container">
-      <h6>Information</h6>
-      <span>x</span>
-      <h1>Card Data</h1>
+      <h6>Add a card</h6>
+      <span> x </span>
+      <h1>Add your card details below</h1>
       <form action="" id="credit-card">
 
         <label for="text-name">Full Name
-          <input type="text" name="text-name" id="text-name" autocomplete="off">
+          <input type="text" name="text-name" id="text-name" autocomplete="off" required>
         </label>
 
         <label >Card Number
           <input type="text" name="creditCardNumber" id="creditCardNumber" autocomplete="off" maxlength="16" 
-          placeholder="**** **** **** ****" onkeypress="return event.charCode >= 48 && event.charCode <= 57" required>
+          onkeypress="return event.charCode >= 48 && event.charCode <= 57" required>
           
         </label>
 
