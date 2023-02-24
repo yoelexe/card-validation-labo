@@ -22,6 +22,8 @@ const isValid = (creditCardNumber) => {
   //console.log(count)
   // document.getElementById("message-error").removeAttribute('class', 'message-error')
 
+  
+
   if(count % 10 === 0){
     if(typeof window !== 'undefined'){
       alert('Tarjeta válida')
@@ -71,14 +73,18 @@ const target = (creditCardNumber) =>  {
 
 }
 
-
-
+const validDate = (date) => {
+  const reg = /(0[1-9]|1[0-2])-(0[1-9]|[12]\d|3[01])/
+  const newStr = date.replace(reg, " - ")
+  return newStr
+}
 
 const validator = {
   isValid, 
   maskify, 
   validaNum,
-  target
+  target,
+  validDate
 }
 
 export default validator

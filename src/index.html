@@ -54,8 +54,14 @@
         
         <div class="card-date">
           <h4>date</h4>
-          <label id="label-date">02/10</label>
+          <label id="label-date">02 </label>
+          
         </div>
+
+        <div class="card-month">
+          <label id="label-month"> 12</label>
+        </div>
+        <span> /</span>
 
         <div class="card-cvv">
           <h4>cvv</h4>
@@ -84,9 +90,16 @@
         <div class="float">
 
           <label for="date">Date
-            <input type="text" name="date" id="date" maxlength="7" autocomplete="off"
+            <input type="text" name="date" id="date" maxlength="2" autocomplete="off"
             onkeypress="return event.charCode >= 48 && event.charCode <= 57" required />
           </label>
+
+          <label for="month">Month
+            <input type="text" name="month" id="month" maxlength="2" autocomplete="off"
+            onkeypress="return event.charCode >= 48 && event.charCode <= 57" required />
+          </label>
+          
+          <span> / </span>
 
           <label for="cvv">CVV 
             <input type="text" name="cvv" id="cvv" maxlength="3" autocomplete="off"
@@ -100,7 +113,7 @@
             <p>All data is confidential, kept in our security policy.</p>
           </label>
 
-          <button id="validator" name="validator">Saved </button>
+          <button id="validator" name="validator" type="submit">Saved </button>
         
       </form>
     </div>
