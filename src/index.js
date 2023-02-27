@@ -13,22 +13,28 @@ const label_cvv = document.querySelector("#label-cvv");
 const cvv = document.querySelector("#cvv");
 const label_month = document.querySelector("#label-month");
 const month = document.querySelector("#month");
+const danger = document.querySelector("#danger");
 
 // keyup o input
 //cardNumber.addEventListener('keyup', validator.separatedNumber)
 
 button.addEventListener('click', () => {
   
-  if(text_name.value.length === 0){
-    alert('Falta el ingresar el nombre')
-  }else if(cardNumber.value.length === 0){
-    alert('Falta ingresar el número de tarjeta')
-  }else if(date.value.length === 0){
-    alert('Falta ingresar la fecha de vencimiento')
-  }else if(month.value.length === 0){
-    alert('Falta ingresar la fecha de vencimiento')
-  }else if(cvv.value.length === 0){
-    alert('Falta ingresar el cvv')
+  if(text_name.value === ''){
+    danger.style.display = 'block'
+    danger.innerHTML = 'Ingresar el nombre'
+  }else if(cardNumber.value === ''){
+    danger.style.display = 'block'
+    danger.innerHTML = 'Ingresar el número de la tarjeta '
+  }else if(date.value === ''){
+    danger.style.display = 'block'
+    danger.innerHTML = 'Ingresar el dia de la FV'
+  }else if(month.value === ''){
+    danger.style.display = 'block'
+    danger.innerHTML = 'Ingresar el mes de la FV'
+  }else if(cvv.value === ''){
+    danger.style.display = 'block'
+    danger.innerHTML = 'Ingresar el cvv'
   }else{
     validator.isValid(cardNumber.value)
   }

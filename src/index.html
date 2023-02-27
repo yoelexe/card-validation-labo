@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width">
     <title>Tarjeta de crédito válida</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
   </head>
   <body>
 
@@ -73,7 +74,6 @@
 
     <div class="container">
       <h6>Add a card</h6>
-      <span> x </span>
       <h1>Add your card details below</h1>
       <form action="" id="credit-card">
 
@@ -113,9 +113,22 @@
             <p>All data is confidential, kept in our security policy.</p>
           </label>
 
-          <button id="validator" name="validator" type="submit">Saved </button>
+          <div class="danger" id="danger">
+            ¡Mensaje de Error!
+          </div>
+
+          <button type="submit" id="validator" name="validator" >Saved </button>
         
       </form>
+    </div>
+
+    <!-- ALERT SUCCESS-->
+
+    <div class="success" id="success">
+      <i class="fa-regular fa-circle-check"></i>
+      <h1>¡Successful!</h1>
+      <label>Your card has been added successfully.</label>
+      <button> Close </button>
     </div>
 
     <!-- MAIN -->

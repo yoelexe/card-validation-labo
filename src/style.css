@@ -228,10 +228,10 @@ form #creditCardNumber{
 }
 
 .float span{
-    top: 54%;
-    left: 31%;
-    
+    top: 55%;
+    left: 67%;
     width: 10px;
+    position: fixed;
 }
 
 /* ! USANDO ID #ABC */
@@ -247,9 +247,16 @@ form #creditCardNumber{
 }
 
 p{
-    margin: -20px 0px 56px 25px;
+    margin: -20px 0px 50px 25px;
     font-size: 16px;
     text-transform: none;
+}
+
+.danger{
+    color: red;
+    font-size: 13px;
+    display: none;
+    padding-bottom: 20px;
 }
 
 #validator{
@@ -264,6 +271,46 @@ p{
     font-weight: bold;
     cursor: pointer;
 }
+
+/* ! ALERT SUCCESS */
+
+.success{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+    width: 400px;
+    background: white;
+    text-align: center;
+    align-items: center;
+    padding: 30px;
+    display: none;
+}
+
+.success i{
+    font-size: 55px;
+    color: green;
+}
+
+.success h1{
+    font-size: 20px;
+    color: black;
+    padding-top: 10px;
+}
+
+.success button{
+    margin-top: 10px;
+    color: white;
+    font-size: 18px;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    background: #999999;
+}
+
+
+/* ! ALERT SUCCES */
 
 /* ! FOOTER */
 

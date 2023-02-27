@@ -25,14 +25,13 @@ const isValid = (creditCardNumber) => {
   
 
   if(count % 10 === 0){
-    if(typeof window !== 'undefined'){
-      alert('Tarjeta válida')
-    }
+    document.getElementById("success").style.display = 'block'
+    document.getElementById("danger").innerHTML = 'Tarjeta válida'
+    document.body.style.background = 'green'
     return true;
   }else{
-    if(typeof window !== 'undefined'){
-      alert('Tarjeta inválida')
-    }
+    document.getElementById("danger").style.display = 'block'
+    document.getElementById("danger").innerHTML = 'Tarjeta inválida'
     return false;
   }
 
