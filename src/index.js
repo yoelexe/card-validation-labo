@@ -37,6 +37,10 @@ button.addEventListener('click', () => {
     danger.innerHTML = 'Ingresar el cvv'
   }else{
     validator.isValid(cardNumber.value)
+    
+    setTimeout( () => {
+      
+    }, 5000)
   }
   
 })

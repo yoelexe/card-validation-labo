@@ -27,10 +27,9 @@ const isValid = (creditCardNumber) => {
   if(count % 10 === 0){
     document.getElementById("success").style.display = 'block'
     document.getElementById("danger").innerHTML = 'Tarjeta válida'
-    document.body.style.background = 'green'
     return true;
   }else{
-    document.getElementById("danger").style.display = 'block'
+    document.getElementById("error").style.display = 'block'
     document.getElementById("danger").innerHTML = 'Tarjeta inválida'
     return false;
   }
@@ -72,18 +71,11 @@ const target = (creditCardNumber) =>  {
 
 }
 
-const validDate = (date) => {
-  const reg = /(0[1-9]|1[0-2])-(0[1-9]|[12]\d|3[01])/
-  const newStr = date.replace(reg, " - ")
-  return newStr
-}
-
 const validator = {
   isValid, 
   maskify, 
   validaNum,
-  target,
-  validDate
+  target
 }
 
 export default validator

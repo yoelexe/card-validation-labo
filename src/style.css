@@ -274,7 +274,8 @@ p{
 
 /* ! ALERT SUCCESS */
 
-.success{
+.success, .error{
+    display: none;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -285,21 +286,26 @@ p{
     text-align: center;
     align-items: center;
     padding: 30px;
-    display: none;
 }
 
-.success i{
+.success >  i{
     font-size: 55px;
     color: green;
 }
 
-.success h1{
+.error > i{
+    font-size: 55px;
+    color: red;
+}
+
+
+.success > h1, .error > h1{
     font-size: 20px;
     color: black;
     padding-top: 10px;
 }
 
-.success button{
+.success > button ,  .error > button{
     margin-top: 10px;
     color: white;
     font-size: 18px;
@@ -333,11 +339,10 @@ footer{
     word-spacing: 2px;
 }
 
-.american{
+.american, .mastercard{
     position: absolute;
     width: 450px;
     height: 300px;   
-    background-image: linear-gradient(to right, #434343 0%, black 100%);
     padding: 30px;
     border-radius: 30px;
     top: 30%;
@@ -345,14 +350,10 @@ footer{
     box-shadow: 1px 5px 6px 0px black;
 }
 
+.american{
+    background-image: linear-gradient(to right, #434343 0%, black 100%);
+}
+
 .mastercard{
-    position: absolute;
-    width: 450px;
-    height: 300px;
     background: linear-gradient(90deg, rgba(255,56,13,1) 52%, rgba(253,159,45,1) 99%);
-    padding: 30px;
-    border-radius: 30px;
-    top: 30%;
-    left: 20%;
-    box-shadow: 1px 5px 6px 0px black;
 }
