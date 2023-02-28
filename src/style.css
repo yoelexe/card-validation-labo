@@ -161,7 +161,6 @@ header{
     position: absolute;
     top: 81%;
     left: 104%;
-    
 }
 
 .card-cvv{
@@ -272,7 +271,7 @@ p{
     cursor: pointer;
 }
 
-/* ! ALERT SUCCESS */
+/* ! ALERT SUCCESS  Y ERROR */
 
 .success, .error{
     display: none;
@@ -298,7 +297,6 @@ p{
     color: red;
 }
 
-
 .success > h1, .error > h1{
     font-size: 20px;
     color: black;
@@ -315,14 +313,10 @@ p{
     background: #999999;
 }
 
-
-/* ! ALERT SUCCES */
-
 /* ! FOOTER */
 
 footer{
     font-family: "Montserrat", sans-serif;
-    
     height: 45px;
     width: 100%;
     color: black;
@@ -331,7 +325,6 @@ footer{
     position: fixed ;
     bottom: 0;
     /*position: sticky ;*/
-    
 }
 
 .footer-bottom{

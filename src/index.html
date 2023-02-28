@@ -117,7 +117,7 @@
             ¡Mensaje de Error!
           </div>
 
-          <button id="validator" name="validator" >Saved </button>
+          <button id="validator" type="button" name="validator" >Saved </button>
         
       </form>
     </div>
@@ -127,19 +127,20 @@
     <div class="success" id="success">
       <i class="fa-regular fa-circle-check"></i>
       <h1>¡Successful!</h1>
-      <label>Valid card. Your card has been saved.</label>
-      <button> Close </button>
+      <label>Valid card. Card added successfully.</label>
+      <button type="submit" id="close-success" name="close-success"> Close </button>
     </div>
 
      <!-- ALERT SUCCESS-->
 
     <!-- ALERT ERROR-->
+
     <div class="error" id="error">
       <i class="fa-regular fa-circle-xmark"></i>
       <h1>¡Error!</h1>
-      <label>Invalid card. Your data has not been saved.</label>
-      <button> Close </button>
-    </div>
+      <label>Invalid card. Try again, pleaseasa.</label>
+      <button type="submit" id="close-error" name="close-error"> Close </button>
+    </div>    
 
     <!-- ALERT ERROR-->
 

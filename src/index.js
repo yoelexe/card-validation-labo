@@ -15,6 +15,11 @@ const label_month = document.querySelector("#label-month");
 const month = document.querySelector("#month");
 const danger = document.querySelector("#danger");
 
+const close_success = document.querySelector("#close-success");
+const close_error = document.querySelector("#close-error");
+const success = document.querySelector("#success");
+const error = document.querySelector("#error");
+
 // keyup o input
 //cardNumber.addEventListener('keyup', validator.separatedNumber)
 
@@ -36,18 +41,22 @@ button.addEventListener('click', () => {
     danger.style.display = 'block'
     danger.innerHTML = 'Ingresar el cvv'
   }else{
+    danger.style.display = 'none'
     validator.isValid(cardNumber.value)
-    
-    setTimeout( () => {
-      
-    }, 5000)
   }
   
 })
 
+close_error.addEventListener('click', () => {
+  error.style.display = 'none'
+})
+
+close_success.addEventListener('click', () => {
+  success.style.display = 'none'
+})
+
 date.addEventListener('keyup', () => {
   label_date.innerHTML = date.value
-  
 })
 
 cardNumber.addEventListener('keyup', () => {
@@ -63,7 +72,6 @@ text_name.addEventListener('keyup', () => {
 
 cvv.addEventListener('keyup', () => {
   label_cvv.innerHTML = cvv.value
-  
 })
 
 month.addEventListener('keyup', () => {
